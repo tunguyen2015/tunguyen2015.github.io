@@ -1082,6 +1082,10 @@
 
 /*=====ONLY X-SMALL=====*/
 @media (max-width: 575px) {
+	h4 {
+		font-size: 16pt;
+	}
+
 	#bgmobilesearch {
         height: 70px;
         width: 100%;
