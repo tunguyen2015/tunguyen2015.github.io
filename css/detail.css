@@ -423,6 +423,12 @@
         border: none;
 	}
 
+    .buynowbtn:hover,.addtocartbtn:hover,.checkstorebtn:hover {
+        background-color: #FFFFFF;
+        color: #DE272C;
+        border: solid 1pt #DE272C;
+    }
+
     .producttitle h3 {
         padding-top: 15px;
     }

@@ -410,6 +410,10 @@
 		border-radius: 5px 5px 5px 5px;
 	}
 
+	.filterbtn:hover {
+		background-color: #DE272C;
+	}
+
 	.sortbtn {
 		display: block;
 		width: 18.75rem;
@@ -426,6 +430,10 @@
 		border-radius: 5px 5px 5px 5px;
 		position: relative;
 		float: right;
+	}
+
+	.sortbtn:hover {
+		background-color: #DE272C;
 	}
 
 	.dropdown {
