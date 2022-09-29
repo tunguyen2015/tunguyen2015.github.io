@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document for Homepage */
+
+/*=====ONLY X-LARGE=====*/
+@media (min-width: 1200px){
+	#banner1 {
+		height: 600px;
+		background-color: #FF0004;
+	}
+}
+
+/*=====ONLY LARGE=====*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	#banner1 {
+		height: 550px;
+		background-color: #FFB600;
+	}
+}
+
+/*=====ONLY MEDIUM=====*/
+@media (min-width: 768px) and (max-width: 991px) {
+	#banner1 {
+		height: 450px;
+		background-color: #22FF00;
+	}
+}
+
+/*=====ONLY SMALL=====*/
+@media (min-width: 576px) and (max-width: 767px) {
+	#banner1 {
+		height: 400px;
+		background-color: #00CBFF;
+	}
+}
+
+/*=====ONLY X-SMALL=====*/
+@media (max-width: 575px){
+	#banner1 {
+		height: 320px;
+		background-color: #F800FF;
+	}
+}

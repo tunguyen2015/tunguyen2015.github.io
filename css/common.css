@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* Common CSS for website */
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navi ul {
+	list-style-type: none;
+	background-color: #000000;
+	margin: auto;
+	padding: 0px;
+}
+
+.navi ul li {
+	display: block;
+	float: left;
+}
+
+.navi ul li a {
+	display: block;
+	text-decoration: none;
+	background-color: #000000;
+	color: #FFFFFF;
+	font: "Segoe UI";
+	font-size: 14pt;
+	height: 55px;
+	padding-top: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+	transition: all ease .5s;
+}
+
+.navi ul li a:hover {
+	color: #DE272C;
+	transition: all ease .5s;
+}
+
+#blackscreen {
+	width: 100%;
+	height: 100%;
+	margin-top: 60px;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	z-index: 1800;
+}
+
+#triggersmallnavi,#triggermobilecart {
+	margin-right: 12px;
+}
+
+#triggerfilternavi {
+	margin-right: 12px;
+}
+
+#triggersmallnavi i {
+	color: #ffffff;
+	padding-top: 0.3rem;
+	float: left;
+}
+
+/*=====MOBILE NAVI=====*/
+#bgsmallnavi {
+	position: fixed;
+	margin-bottom: 20px;
+	z-index: 1900;
+}
+
+#bgfilternavi {
+	position: fixed;
+	z-index: 1900;
+}
+
+#smallnavi {
+	padding: 0px;
+}
+
+#smallnavi ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#smallnavi ul li {
+	display: block;
+}
+
+#filternavi {
+	padding: 0px;
+}
+
+#filternavi ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#filternavi ul li {
+	display: block;
+}
+
+#filternavi ul li a {
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #555555;
+	height: 60px;
+	font-size: 18pt;
+	border-bottom: solid 1pt #333333;
+	border-top: solid 1pt #777777;
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+#filternavi ul li a:hover {
+	color: #DE272C;
+	transition: all ease .5s;
+}
+
+/*=====HEADER=====*/
+#bgheader {
+	height: 55px;
+	background-color: #000000;
+}
+
+#aboutstore,#searchbox,#icons {
+	height: 40px;
+	background-color: #FFCECF;
+	border: solid 1pt #FF0004;
+}
+
+#carousel-div {
+	padding: 0;
+}
+
+.carousel-indicators .active {
+	background-color: #DE272C;
+}
+
+/*=====NAVI=====*/
+#bgnavi {
+	height: 3.75rem;
+	background-color: #000000;
+}
+
+#logo,#icon3line,#mobileicons {
+	height: 60px;
+	background-color: #FFEDC3;
+	border: solid 1pt #FFB600;
+}
+
+/*=====FORMAT=====*/
+.productsection {
+	height: 60px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.productsection hr {
+	width: 6.25rem;
+	background-color: #DE272C;
+	border: solid 1pt #DE272C;
+	margin: 0 auto;
+	margin-top: 0.8rem;
+	margin-bottom: 0.8rem;
+}
+
+.productsection p {
+	color: #C3C3C3;
+}
+
+#addressbar {
+	height: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #FFCECF;
+	border: solid 1pt #FF0004;
+}
+
+#pagenumber {
+	height: 60px;
+	background-color: #59D8FF;
+	border: solid 1pt #00013F;
+}
+
+/*=====FOOTER=====*/
+#bgfooter {
+	background-color: #333333;
+}
+
+#companynavi,#customernavi,#productnavi,#supportnavi {
+	height: 200px;
+	background-color: #FFEDC3;
+	border: solid 1pt #FFB600;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#copyright,#socialicon {
+	height: 50px;
+	background-color: #FFCECF;
+	border: solid 1pt #FF0004;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
