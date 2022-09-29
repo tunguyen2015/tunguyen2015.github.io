@@ -214,7 +214,7 @@
 	display: block;
 	background-color: #FFFFFF;
 	text-decoration: none;
-	color: #DE272C;
+	color: #DE272C !important;
 	transition: all ease .5s;
 	border: solid 1pt #DE272C;
 }
