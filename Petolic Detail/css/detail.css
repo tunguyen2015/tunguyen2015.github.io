@@ -1,0 +1,880 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: SourceSansFont;
+    src: url(../font/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: SourceSansSlimFont;
+    src: url(../font/SourceSansPro-Light.ttf);
+}
+
+body {
+    font-family: SourceSansFont;
+}
+
+#button-padding-detail {
+    padding-top: 30px;
+}
+
+.btn-detail {
+    display: block;
+    width: 100%;
+    background-color: #3D322C;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16pt;
+    color: #FFFFFF;
+    padding-top: 0.1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+    height: 3.7rem;
+    transition: all ease .5s;
+    border-radius: 1.75rem 1.75rem 1.75rem 1.75rem;
+    border: none;
+}
+
+.sectionbtn-detail {
+    display: block;
+    width: 100%;
+    background-color: #D9B26E;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16pt;
+    color: #FFFFFF;
+    padding-top: 0.1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+    height: 3.7rem;
+    transition: all ease .5s;
+    border-radius: 1.75rem 1.75rem 1.75rem 1.75rem;
+    border: none;
+}
+
+.learnmorebtn-detail {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16pt;
+    color: #3D322C;
+    padding-top: 0.2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+    height: 3.7rem;
+    transition: all ease .5s;
+    border-radius: 1.75rem 1.75rem 1.75rem 1.75rem;
+    border: solid 2pt #3D322C;
+}
+
+.btn-detail:hover {
+    background-color: #9C563D;
+}
+
+.sectionbtn-detail:hover {
+    background-color: #9C563D;
+}
+
+.learnmorebtn-detail:hover {
+    background-color: #3D322C;
+    color: #D9B26E;
+}
+
+/*=====ONLY EXTRA LARGE=====*/
+@media (min-width: 1200px) {
+    #bgfooter-detail {
+        height: 43.75rem;
+        background-color: #3D332C;
+        clip-path: ellipse(100% 75% at 50% 82%);
+        position: relative;
+        margin-top: -19.375rem;
+    }
+
+    #header-background-detail {
+        display: none;
+    }
+    #header-background-detail-dog {
+        display: none;
+    }
+    
+    #firstsection-detail {
+        height: 42rem;
+        padding-top: 0.938rem;
+        background-color: #F9F9F9;
+    }
+    
+    #secondsection-detail {
+        height: 61.25rem;
+        padding-top: 0.938rem;
+        background-color: #F9F9F9;
+    }
+    
+    #secondsection-detail h3 {
+        color: #252525;
+        text-align: center;
+        padding-top: 0.625rem;
+    }
+    
+    #secondsection-detail h5 {
+        text-align: justify;
+        padding-top: 1.563rem;
+    }
+    
+    #secondsection-detail p {
+        text-align: justify;
+        padding-top: 0.938rem;
+    }
+    
+    #bigimg-detail {
+        padding-top: 0.938rem;
+        height: auto;
+    }
+    
+    #smallimg-detail {
+        padding-top: 4.4rem;
+    }
+    
+    #smallimg-detail img {
+        opacity: .8;
+    }
+    
+    #story-section h5 {
+        text-align: justify;
+    }
+
+    .section-mid-detail {
+        height: 40.625rem;
+    }
+    
+    .section-mid-small-detail {
+        display: none;
+    }
+    
+    .section-height-detail {
+        height: 49.375rem;
+    }
+    
+    .section-height-detail-dog {
+        height: 35rem;
+    }
+
+    .section-height-small-detail {
+        display: none;
+    }
+
+    .description-detail p {
+        text-align: justify;
+    }
+    
+    .description-detail h5 {
+        text-align: justify;
+    }
+    
+    .border-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    }
+    
+    .content-padding-detail {
+        padding-top: 0.938rem;
+    }
+
+    .big-img-height-detail {
+        height: 25rem;
+        width: 38rem;
+    }
+
+    .img-height-section-detail {
+        height: 60%;
+        margin: auto;
+        display: block;
+    }
+    
+    .img-height-section-dog-detail {
+        height: 70%;
+        margin: auto;
+        display: block;
+    }
+
+    .img-height-care-detail {
+        height: 80%;
+        margin: auto;
+        display: block;
+    }
+
+    .img-height-environment-detail {
+        height: 70%;
+        margin: auto;
+        display: block;
+    }
+    
+    .img-height-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 2rem 2rem 2rem 2rem;
+        height: 7.5rem;
+        width: 15.625rem;
+    }
+    
+    .img-height-others-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 3.125rem 3.125rem 3.125rem 3.125rem;
+        height: 15.625rem;
+    }
+}
+
+/*=====ONLY LARGE=====*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 11px;
+    }
+
+    #small-screen-detail {
+        display: none;
+    }
+
+    #header-background-detail {
+        display: none;
+    }
+
+    #header-background-detail-dog {
+        display: none;
+    }
+
+    #bgfooter-detail {
+        height: 43.75rem;
+        background-color: #3D332C;
+        clip-path: ellipse(100% 75% at 50% 82%);
+        position: relative;
+        margin-top: -19.375rem;
+    }
+
+    #firstsection-detail {
+        height: 680px;
+        padding-top: 15px;
+        background-color: #F9F9F9;
+    }
+
+    #secondsection-detail {
+        height: 61.25rem;
+        padding-top: 0.938rem;
+        background-color: #F9F9F9;
+    }
+    
+    #secondsection-detail h3 {
+        color: #252525;
+        text-align: center;
+        padding-top: 0.625rem;
+    }
+    
+    #secondsection-detail h5 {
+        text-align: justify;
+        padding-top: 1.563rem;
+    }
+    
+    #secondsection-detail p {
+        text-align: justify;
+        padding-top: 0.938rem;
+    }
+
+    #bigimg-detail {
+        padding-top: 25px;
+    }
+
+    #smallimg-detail {
+        padding-top: 3.5rem;
+    }
+    
+    #smallimg-detail img {
+        opacity: .8;
+    }
+    
+    .section-mid-detail {
+        height: 50rem;
+    }
+
+    .section-mid-small-detail {
+        display: none;
+    }
+    
+    .section-height-detail {
+        height: 50rem;
+    }
+
+    .section-height-detail h5 {
+        text-align: justify;
+    }
+
+    .section-height-small-detail {
+        display: none;
+    }
+    
+    .description-detail p {
+        text-align: justify;
+    }
+    
+    .description-detail h5 {
+        text-align: justify;
+    }
+    
+    .border-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 3.5rem 3.5rem 3.5rem 3.5rem;
+    }
+    
+    .content-padding-detail {
+        padding-top: 0.938rem;
+    }
+
+    .big-img-height-detail {
+        height: 25rem;
+        width: 37.5rem;
+    }
+
+    .img-height-section-detail {
+        height: 75%;
+        margin: auto;
+        display: block;
+    }
+
+    .img-height-section-dog-detail {
+        height: 90%;
+        margin: auto;
+        display: block;
+    }
+    
+    .img-height-care-detail {
+        height: 65%;
+        margin: auto;
+        display: block;
+    }
+
+    .img-height-environment-detail {
+        height: 60%;
+        margin: auto;
+        display: block;
+    }
+    
+    .img-height-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 40px 40px 40px 40px;
+        height: 110%;
+    }
+    
+    .img-height-others-detail {
+        height: 200px;
+        border: solid 2pt #D9B26E;
+        border-radius: 65px 65px 65px 65px;
+    }
+}
+
+/*=====ONLY MEDIUM=====*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 11pt;
+    }
+
+    #header-background-detail {
+        display: none;
+    }
+
+    #header-background-detail-dog {
+        display: none;
+    }
+
+    #bgfooter-detail {
+        height: 43.75rem;
+        background-color: #3D332C;
+        clip-path: ellipse(100% 75% at 50% 82%);
+        position: relative;
+        margin-top: -19.375rem;
+    }
+
+    #small-screen-detail {
+        display: none;
+    }
+
+    #firstsection-detail {
+        height: 1140px;
+        padding-top: 15px;
+        background-color: #F9F9F9;
+    }
+
+    #secondsection-detail {
+        height: 61.25rem;
+        padding-top: 0.938rem;
+        background-color: #F9F9F9;
+    }
+    
+    #secondsection-detail h3 {
+        color: #252525;
+        text-align: center;
+        padding-top: 0.625rem;
+    }
+    
+    #secondsection-detail h5 {
+        text-align: justify;
+        padding-top: 1.563rem;
+    }
+    
+    #secondsection-detail p {
+        text-align: justify;
+        padding-top: 0.938rem;
+    }
+
+    #bigimg-detail {
+        padding-top: 25px;
+    }
+
+    #smallimg-detail {
+        padding-top: 2rem;
+    }
+    
+    #smallimg-detail img {
+        opacity: .8;
+    }
+    
+    .section-mid-detail {
+        display: none;
+    }
+
+    .section-mid-small-detail {
+        height: 90rem;
+        text-align: justify;
+    }
+
+    .section-mid-small-detail h2 {
+        text-align: center;
+    }
+    
+    .section-height-detail {
+        display: none;
+    }
+
+    .section-height-small-detail {
+        height: 70rem;
+    }
+
+    .section-height-small-detail h2 {
+        padding-top: 25px;
+        text-align: center;
+    }
+
+    .section-height-small-detail h5 {
+        text-align: justify;
+    }
+    
+    .description-detail p {
+        text-align: justify;
+    }
+    
+    .description-detail h5 {
+        text-align: justify;
+    }
+    
+    .border-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 3.5rem 3.5rem 3.5rem 3.5rem;
+    }
+    
+    .content-padding-detail {
+        padding-top: 0.938rem;
+    }
+
+    .big-img-height-detail {
+        height: 27rem;
+        width: 45rem;
+    }
+
+    .img-height-section-detail {
+        height: 40%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .img-height-section-dog-detail {
+        height: 50%;
+        margin: auto;
+        display: block;
+    }
+    
+    .img-height-care-detail {
+        height: 40%;
+        margin: auto;
+        display: block;
+    }
+
+    .img-height-environment-detail {
+        height: 40%;
+        margin: auto;
+        display: block;
+    }
+
+    .img-height-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 40px 40px 40px 40px;
+        height: 110%;
+    }
+    
+    .img-height-others-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 60px 60px 60px 60px;
+    }
+
+    #bgfooter {
+        padding-bottom: -700px;
+    }
+}
+
+/*=====ONLY SMALL=====*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    body {
+        font-size: 8pt;
+    }
+
+    #small-screen-detail {
+        text-align: justify;
+    }
+
+    #small-screen-detail h1,h2 {
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    #header-background-detail {
+        background-image: url('../img/brits-shorthair-primary.jpg');
+        background-size: cover;
+        clip-path: ellipse(100% 65% at 51% 24%);
+        height: 400px;
+    }
+
+    #header-background-detail-dog {
+        background-image: url('../img/golden-retriever.jpg');
+        background-size: cover;
+        clip-path: ellipse(100% 65% at 51% 24%);
+        height: 400px;
+    }
+
+    #firstsection-detail {
+        display: none;
+    }
+
+    #firstsection-small-detail {
+        display: none;
+    }
+
+    #secondsection-detail {
+        display: none;
+    }
+
+    #bgfooter-detail {
+        height: 43.75rem;
+        background-color: #3D332C;
+        clip-path: ellipse(100% 75% at 50% 82%);
+        position: relative;
+        margin-top: 19.375rem;
+    }
+
+    #firstsection-detail {
+        display: none;
+    }
+
+    #secondsection-detail {
+        height: 61.25rem;
+        padding-top: 0.938rem;
+        background-color: #F9F9F9;
+    }
+    
+    #secondsection-detail h3 {
+        color: #252525;
+        text-align: center;
+        padding-top: 0.625rem;
+    }
+    
+    #secondsection-detail h5 {
+        text-align: justify;
+        padding-top: 1.563rem;
+    }
+    
+    #secondsection-detail p {
+        text-align: justify;
+        padding-top: 0.938rem;
+    }
+
+    #bigimg-detail {
+        padding-top: 25px;
+    }
+
+    #smallimg-detail {
+        padding-top: 2rem;
+    }
+    
+    #smallimg-detail img {
+        opacity: .8;
+    }
+
+    #small-screen-others-detail h3 {
+        color: #252525;
+    }
+    
+    .section-mid-detail {
+        display: none;
+    }
+
+    .section-mid-small-detail {
+        height: 60rem;
+    }
+    
+    .section-height-detail {
+        display: none;
+    }
+
+    .section-height-small-detail {
+        height: 65rem;
+    }
+
+    .section-height-small-detail h2 {
+        padding-top: 25px;
+        text-align: center;
+    }
+
+    .section-height-small-detail h5 {
+        text-align: justify;
+    }
+    
+    .description-detail p {
+        text-align: justify;
+    }
+    
+    .description-detail h5 {
+        text-align: justify;
+    }
+    
+    .border-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 3.5rem 3.5rem 3.5rem 3.5rem;
+    }
+    
+    .content-padding-detail {
+        padding-top: 0.938rem;
+    }
+
+    .big-img-height-detail {
+        height: 27rem;
+        width: 45rem;
+    }
+
+    .img-height-section-detail {
+        height: 35%;
+        margin: auto;
+        display: block;
+    }
+
+    .img-height-section-dog-detail {
+        height: 40%;
+        margin: auto;
+        display: block;
+    }
+    
+    .img-height-care-detail {
+        height: 35%;
+        margin: auto;
+        display: block;
+    }
+
+    .img-height-environment-detail {
+        height: 35%;
+        margin: auto;
+        display: block;
+    }
+
+    .img-height-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 40px 40px 40px 40px;
+        height: 110%;
+    }
+    
+    .img-height-others-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 60px 60px 60px 60px;
+    }
+}
+
+/*=====ONLY X-SMALL=====*/
+@media (max-width: 575px) {
+    body {
+        font-size: 8pt;
+    }
+
+    #small-screen-detail {
+        text-align: justify;
+    }
+
+    #small-screen-detail h1,h2 {
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    #header-background-detail {
+        background-image: url('../img/brits-shorthair-primary.jpg');
+        background-size: cover;
+        clip-path: ellipse(100% 65% at 51% 24%);
+        height: 400px;
+    }
+
+    #header-background-detail-dog {
+        background-image: url('../img/golden-retriever.jpg');
+        clip-path: ellipse(100% 65% at 51% 24%);
+        background-size: cover;
+        height: 400px;
+    }
+
+    #firstsection-detail {
+        display: none;
+    }
+
+    #firstsection-small-detail {
+        display: none;
+    }
+
+    #secondsection-detail {
+        display: none;
+    }
+
+    #bgfooter-detail {
+        height: 43.75rem;
+        background-color: #3D332C;
+        clip-path: ellipse(100% 75% at 50% 82%);
+        position: relative;
+        margin-top: 19.375rem;
+    }
+
+    #firstsection-detail {
+        display: none;
+    }
+
+    #secondsection-detail {
+        height: 61.25rem;
+        padding-top: 0.938rem;
+        background-color: #F9F9F9;
+    }
+    
+    #secondsection-detail h3 {
+        color: #252525;
+        text-align: center;
+        padding-top: 0.625rem;
+    }
+    
+    #secondsection-detail h5 {
+        text-align: justify;
+        padding-top: 1.563rem;
+    }
+    
+    #secondsection-detail p {
+        text-align: justify;
+        padding-top: 0.938rem;
+    }
+
+    #bigimg-detail {
+        padding-top: 25px;
+    }
+
+    #smallimg-detail {
+        padding-top: 2rem;
+    }
+    
+    #smallimg-detail img {
+        opacity: .8;
+    }
+
+    #small-screen-others-detail {
+        color: #252525;
+    }
+
+    #small-screen-others-detail h3 {
+        color: #252525;
+    }
+    
+    .section-mid-detail {
+        display: none;
+    }
+
+    .section-mid-small-detail {
+        height: 60rem;
+    }
+    
+    .section-height-detail {
+        display: none;
+    }
+
+    .section-height-small-detail {
+        height: 65rem;
+    }
+
+    .section-height-small-detail h2 {
+        padding-top: 25px;
+        text-align: center;
+    }
+
+    .section-height-small-detail h5 {
+        text-align: justify;
+    }
+    
+    .description-detail p {
+        text-align: justify;
+    }
+    
+    .description-detail h5 {
+        text-align: justify;
+    }
+    
+    .border-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 3.5rem 3.5rem 3.5rem 3.5rem;
+    }
+    
+    .content-padding-detail {
+        padding-top: 0.938rem;
+    }
+
+    .big-img-height-detail {
+        height: 27rem;
+        width: 45rem;
+    }
+
+    .img-height-section-detail {
+        height: 35%;
+        margin: auto;
+        display: block;
+    }
+
+    .img-height-section-dog-detail {
+        height: 40%;
+        margin: auto;
+        display: block;
+    }
+    
+    .img-height-care-detail {
+        height: 35%;
+        margin: auto;
+        display: block;
+    }
+
+    .img-height-environment-detail {
+        height: 35%;
+        margin: auto;
+        display: block;
+    }
+
+    .img-height-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 40px 40px 40px 40px;
+        height: 110%;
+    }
+    
+    .img-height-others-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 60px 60px 60px 60px;
+    }
+}

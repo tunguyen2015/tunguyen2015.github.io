@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="css/detail.css" rel="stylesheet">
+	<link href="css/common.css" rel="stylesheet">
+	<link href="css/font-awesome/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+	<title>Product Detail</title>
+</head>
+<body>
+	<div class="container-fluid" id="blackscreen"></div>
+	<!--NAVI-->
+	<div class="container-fluid" id="bgnavi">
+		<div class="container d-none d-md-block">
+			<div class="row">
+				<div class="col-xl-2
+                            col-lg-2
+							col-md-2" id="logo">
+					<a href="../Petolic Home/home.html"><img class="img-fluid imglogo" src="img/logopjweb-02.png"></a>
+				</div>
+				<!--logo-->
+				<div class="col-xl-5 offset-xl-1
+							col-lg-5 
+							col-md-5 offset-md-1" id="navi">
+					<ul>
+						<li><a href="../Petolic Product/Product.html">Pets</a></li>
+						<li><a href="../Petolic Home/process-Phuong.html">Purchase</a></li>
+						<li><a href="../Petolic Detail/About Us.html">About us</a></li>
+						<li><a href="../Petolic Product/Blog.html">Blogs</a></li>
+					</ul>
+				</div>
+				<!--navi-->
+				<div class="col-xl-2 
+							col-lg-2 
+							col-md-2" id="seach">
+					<div class="searchbox">
+						<input type="text" placeholder="" id="searchfill">
+						<button id="searchbtn"><i class="fa-regular fa-magnifying-glass"></i></button>
+					</div>
+				</div>
+				<!--search-->
+				<div class="col-xl-2
+							  col-lg-2
+							  col-md-2" id="icon">
+					<ul>
+						<li><a id="buy"><i class="fa-light fa-basket-shopping"></i></a></li>
+						<li><a id="user"><i class="fa-light fa-user"></i></a></li>
+					</ul>
+				</div>
+				<!--icons-->
+			</div>
+		</div>
+		<!-- MOBILE NAVI-->
+		<div class="container d-md-none">
+			<div class="row">
+				<div class="col-sm-3
+							  col-3" id="burgerline">
+					<ul>
+						<li><a id="burger"><i class="fa-light fa-bars"></i></a></li>
+						<li><a id="searchs"><i class="fa-light fa-magnifying-glass"></i></a></li>
+					</ul>
+				</div>
+				<!--burgerline-->
+				<div class="col-sm-3 offset-sm-2
+							  col-4 offset-1" id="logos">
+				</div>
+				<!--logos-->
+				<div class="col-sm-3 offset-sm-1
+							  col-3 offset-2" id="icons">
+					<ul>
+						<li><a id="buys"><i class="fa-light fa-basket-shopping"></i></a></li>
+						<li><a id="users"><i class="fa-light fa-user"></i></a></li>
+					</ul>
+				</div>
+				<!--icons-->
+			</div>
+		</div>
+		<!--MOBILE NAVI-->
+	</div>
+	<!--filtermbnavi-->
+	<div class="container-fluid d-md-none" id="bgmobilenavi">
+		<div class="row">
+			<div class="col-sm-12 col-12" id="mobilenavi">
+				<ul>
+					<li><a href="../Petolic Product/Product.html">Puppies</a></li>
+					<li><a href="../Petolic Product/Product-Cat.html">Kitties</a></li>
+					<li><a href="../Petolic Product/Product-Bunny.html">Bunnies</a></li>
+					<li><a href="../Petolic Home/process-Phuong.html">Purchase</a></li>
+					<li><a href="../Petolic Detail/About Us.html">About Us</a></li>
+					<li><a href="../Petolic Product/Blog.html">Blogs</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid d-md-none" id="bgmobilesearch">
+		<div class="row">
+			<div class="col-sm-12 col-12" id="mobilesearch">
+				<input type="text" placeholder="search here..." id="mobilesearchfill">
+				<button id="mobilesearchbtn"><i class="fa-light fa-magnifying-glass"></i></button>
+			</div>
+		</div>
+	</div>
+	<!--navi-->
+	<div class="container-fluid d-none d-md-block" id="firstsection-detail">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-7 
+							col-lg-7 
+							col-md-12">
+					<div id="bigimg-detail">
+						<img src="./img/golden-retriever-primary.jpeg"
+							class="img-fluid border-detail big-img-height-detail" alt="">
+					</div>
+					<div class="row" id="smallimg-detail">
+						<div class="col-xl-4 
+									col-lg-4 
+									col-md-4 
+									col-sm-4 
+									col-4">
+							<img src="./img/golden-retriever-primary.jpeg" class="img-fluid img-height-detail"
+								id="firstimg" alt="">
+						</div>
+						<div class="col-xl-4 
+									col-lg-4 
+									col-md-4 
+									col-sm-4 
+									col-4">
+							<img src="./img/golden-retriever-1.jpg" class="img-fluid img-height-detail" alt="">
+						</div>
+						<div class="col-xl-4 
+									col-lg-4 
+									col-md-4 
+									col-sm-4 
+									col-4">
+							<img src="./img/golden-retriever.jpg" class="img-fluid img-height-detail" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-5
+							col-lg-5
+							col-md-12
+							col-sm-5
+							col-5 description-detail">
+					<h1 class="d-none d-xl-block content-padding-detail"><b>Golden Retriever<br>6 Months Old</b></h1>
+					<h2 class="content-padding-detail d-xl-none d-none d-lg-block"><b>Golden Retriever<br>6 Months
+							Old</b></h2>
+					<h2 class="content-padding-detail d-xl-none d-lg-none"><b>Golden Retriever 6 Months Old</b></h2>
+					<h5>The Golden Retriever is a Scottish breed of retriever dog of medium size. It is characterised by
+						a gentle and affectionate nature and a striking golden coat. It is commonly kept as a pet and is
+						among the most frequently registered breeds in several Western countries. It is a frequent
+						competitor
+						in dog shows and obedience trials; it is also used as a gundog, and may be trained for use as a
+						guide dog.
+					</h5>
+					<br>
+					<h5>
+						The breed was created by Sir Dudley Marjoribanks at his Scottish estate Guisachan in the late
+						nineteenth century.
+						The breed was recognised by the Kennel Club in 1913
+					</h5>
+					<br>
+					<h2><b>$599</b></h2>
+					<br>
+					<div class="row">
+						<div class="col-xl-6 
+									col-lg-6 
+									col-md-6">
+							<button class="btn-detail">BUY NOW</button>
+						</div>
+						<div class="col-xl-6 
+									col-lg-6 
+									col-md-6">
+							<button class="btn-detail">CHECK STORE</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid d-md-none d-lg-none d-xl-none" id="header-background-detail-dog">
+	</div>
+	<div class="container-fluid d-md-none d-lg-none d-xl-none" id="small-screen-detail">
+		<div class="container">
+			<h1><b>Golden Retriever<br>6 Months Old</b></h1>
+			</h1>
+			<h2><b>$599</b></h2>
+			<br>
+			<div class="row">
+				<div class="col-12">
+					<button class="btn-detail">BUY NOW</button>
+				</div>
+				<div class="col-12">
+					<button class="btn-detail">CHECK STORE</button>
+				</div>
+			</div>
+			<div class="row section-height-small-detail">
+				<img src="./img/golden-retriever-section.png" alt="" class="img-fluid img-height-section-dog-detail">
+				<div class="col-md-12 col-12">
+					<h2><b>The Story behind Golden Retriever</b></h2>
+					<br>
+					<h5>
+						For many years, there was a legend that Golden Retrievers were descended from Russian sheepdogs
+						bought from a circus. In fact, the breed was developed in Scotland, at the highland estate of
+						Sir
+						Dudley Majoribanks, later known as Lord Tweedmouth.
+					</h5>
+					<br>
+					<h5>
+						The Kennel Club in England officially recognized the Golden Retriever as a distinct breed in
+						1911.
+						At that time, they were classified as "Retriever — Yellow or Golden." In 1920, the breed name
+						was
+						officially changed to Golden Retriever.
+					</h5>
+					<br>
+					<button class="learnmorebtn-detail">LEARN MORE</button>
+				</div>
+			</div>
+			<div class="row section-mid-small-detail">
+				<img src="./img/golden-retriever-care.png" alt="" class="img-fluid img-height-care-detail">
+				<div class="col-md-12">
+					<h2><b>Golden Retriever Care</b></h2>
+					<br>
+					<h5>
+						Golden Retrievers are built for action and love outdoor romps. If you like to hike or jog, your
+						Golden will
+						be happy to join you. And if you feel like tossing a ball in the backyard, they'd be more than
+						happy to join
+						you; true to their name, Goldens love to retrieve.
+					</h5>
+					<br>
+					<h5>
+						You'll need to take special care if you're raising a Golden puppy. These dogs grow very rapidly
+						between the
+						age of four and seven months, making them susceptible to bone disorders. Don't let your Golden
+						puppy run and
+						play on very hard surfaces such as pavement until he's at least two years old and his joints are
+						fully formed.
+						Normal play on grass is fine, and so are puppy agility classes.
+					</h5>
+					<br>
+					<button class="learnmorebtn-detail">LEARN MORE</button>
+				</div>
+			</div>
+			<div class="row section-height-small-detail">
+				<img src="./img/golden-retriever-environment.png" alt=""
+					class="img-fluid img-height-environment-detail">
+				<div class="col-md-12">
+					<h2><b>Golden Retriever Environment</b></h2>
+					<br>
+					<h5>
+						The amiable Golden Retriever isn't bothered by the noise and commotion of kids — in fact, he
+						thrives on it.
+						He's a large, strong dog, though, and he can easily knock over a small child by mistake.
+					</h5>
+					<br>
+					<h5>
+						As with every breed, you should always teach children how to approach and touch dogs, and always
+						supervise any
+						interactions between dogs and young children to prevent any biting or ear or tail pulling on the
+						part of either party.
+					</h5>
+					<br>
+					<h5>
+						The Golden's attitude toward other pets is the more the merrier. He enjoys the companionship of
+						other dogs,
+						and with proper introductions and training, can be trusted with cats, rabbits, and other
+						animals.
+					</h5>
+					<br>
+					<button class="learnmorebtn-detail">LEARN MORE</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" id="firstsection-small-detail">
+		<div class="container">
+			<div class="row" id="button-padding-detail">
+				<div class="col-xl-4 
+							col-lg-4 
+							col-md-4">
+					<button class="sectionbtn-detail" onclick="scrollToSection('#story-section')">STORY</button>
+				</div>
+				<div class="col-xl-4 
+							col-lg-4 
+							col-md-4">
+					<button class="sectionbtn-detail" onclick="scrollToSection('#care-section')">CARE
+						INFORMATION</button>
+				</div>
+				<div class="col-xl-4 
+							col-lg-4 
+							col-md-4">
+					<button class="sectionbtn-detail"
+						onclick="scrollToSection('#environment-section')">ENVIRONMENT</button>
+				</div>
+			</div>
+			<div class="row section-height-detail-dog" id="story-section">
+				<div class="col-xl-6 col-lg-6">
+					<img src="./img/golden-retriever-section.png" alt=""
+						class="img-fluid img-height-section-dog-detail">
+				</div>
+				<div class="col-xl-6 col-lg-6">
+					<br>
+					<h2><b>The Story behind Golden Retriever</b></h2>
+					<br>
+					<h5>
+						For many years, there was a legend that Golden Retrievers were descended from Russian sheepdogs
+						bought from a circus. In fact, the breed was developed in Scotland, at the highland estate of
+						Sir
+						Dudley Majoribanks, later known as Lord Tweedmouth.
+					</h5>
+					<br>
+					<h5>
+						The Kennel Club in England officially recognized the Golden Retriever as a distinct breed in
+						1911.
+						At that time, they were classified as "Retriever — Yellow or Golden." In 1920, the breed name
+						was
+						officially changed to Golden Retriever.
+					</h5>
+					<br>
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 col-md-12">
+							<button class="learnmorebtn-detail">LEARN MORE</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row section-height-small-detail d-xl-none d-md-none" id="story-section">
+				<img src="./img/golden-retriever-section.png" alt="" class="img-fluid img-height-section-detail">
+				<div class="col-md-12 col-12">
+					<h2><b>The Story behind Golden Retriever</b></h2>
+					<br>
+					<h5>
+						For many years, there was a legend that Golden Retrievers were descended from Russian sheepdogs
+						bought from a circus. In fact, the breed was developed in Scotland, at the highland estate of
+						Sir
+						Dudley Majoribanks, later known as Lord Tweedmouth.
+					</h5>
+					<br>
+					<h5>
+						The Kennel Club in England officially recognized the Golden Retriever as a distinct breed in
+						1911.
+						At that time, they were classified as "Retriever — Yellow or Golden." In 1920, the breed name
+						was
+						officially changed to Golden Retriever.
+					</h5>
+					<br>
+					<button class="learnmorebtn-detail">LEARN MORE</button>
+				</div>
+			</div>
+			<div class="row section-mid-detail" id="care-section">
+				<div class="col-xl-6 col-lg-6 description-detail">
+					<br>
+					<h2><b>Golden Retriever Care</b></h2>
+					<br>
+					<h5>
+						Golden Retrievers are built for action and love outdoor romps. If you like to hike or jog, your
+						Golden will
+						be happy to join you. And if you feel like tossing a ball in the backyard, they'd be more than
+						happy to join
+						you; true to their name, Goldens love to retrieve.
+					</h5>
+					<br>
+					<h5>
+						You'll need to take special care if you're raising a Golden puppy. These dogs grow very rapidly
+						between the
+						age of four and seven months, making them susceptible to bone disorders. Don't let your Golden
+						puppy run and
+						play on very hard surfaces such as pavement until he's at least two years old and his joints are
+						fully formed.
+						Normal play on grass is fine, and so are puppy agility classes.
+					</h5>
+					<br>
+					<div class="row">
+						<div class="col-xl-6 col-lg-6">
+							<button class="learnmorebtn-detail">LEARN MORE</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-12">
+					<img src="./img/golden-retriever-care.png" class="img-fluid img-height-care-detail" alt="">
+				</div>
+			</div>
+			<div class="row section-mid-small-detail d-xl-none" id="care-section">
+				<img src="./img/golden-retriever-care.png" alt="" class="img-fluid img-height-care-detail">
+				<div class="col-md-12">
+					<h2><b>Golden Retriever Care</b></h2>
+					<br>
+					<h5>
+						Golden Retrievers are built for action and love outdoor romps. If you like to hike or jog, your
+						Golden will
+						be happy to join you. And if you feel like tossing a ball in the backyard, they'd be more than
+						happy to join
+						you; true to their name, Goldens love to retrieve.
+					</h5>
+					<br>
+					<h5>
+						You'll need to take special care if you're raising a Golden puppy. These dogs grow very rapidly
+						between the
+						age of four and seven months, making them susceptible to bone disorders. Don't let your Golden
+						puppy run and
+						play on very hard surfaces such as pavement until he's at least two years old and his joints are
+						fully formed.
+						Normal play on grass is fine, and so are puppy agility classes.
+					</h5>
+					<br>
+					<button class="learnmorebtn-detail">LEARN MORE</button>
+				</div>
+			</div>
+			<div class="row section-height-detail" id="environment-section">
+				<div class="col-xl-6 col-lg-6">
+					<img src="./img/golden-retriever-environment.png" class="img-fluid img-height-environment-detail"
+						alt="">
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-12 description-detail">
+					<h2><b>Golden Retriever Environment</b></h2>
+					<br>
+					<h5>
+						The amiable Golden Retriever isn't bothered by the noise and commotion of kids — in fact, he
+						thrives on it.
+						He's a large, strong dog, though, and he can easily knock over a small child by mistake.
+					</h5>
+					<br>
+					<h5>
+						As with every breed, you should always teach children how to approach and touch dogs, and always
+						supervise any
+						interactions between dogs and young children to prevent any biting or ear or tail pulling on the
+						part of either party.
+					</h5>
+					<br>
+					<h5>
+						The Golden's attitude toward other pets is the more the merrier. He enjoys the companionship of
+						other dogs,
+						and with proper introductions and training, can be trusted with cats, rabbits, and other
+						animals.
+					</h5>
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 col-md-12">
+							<button class="learnmorebtn-detail">LEARN MORE</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row section-height-small-detail" id="environment-section">
+				<img src="./img/golden-retriever-environment.png" alt=""
+					class="img-fluid img-height-environment-detail">
+				<div class="col-md-12">
+					<h2><b>Golden Retriever Environment</b></h2>
+					<br>
+					<h5>
+						The amiable Golden Retriever isn't bothered by the noise and commotion of kids — in fact, he
+						thrives on it.
+						He's a large, strong dog, though, and he can easily knock over a small child by mistake.
+					</h5>
+					<br>
+					<h5>
+						As with every breed, you should always teach children how to approach and touch dogs, and always
+						supervise any
+						interactions between dogs and young children to prevent any biting or ear or tail pulling on the
+						part of either party.
+					</h5>
+					<br>
+					<h5>
+						The Golden's attitude toward other pets is the more the merrier. He enjoys the companionship of
+						other dogs,
+						and with proper introductions and training, can be trusted with cats, rabbits, and other
+						animals.
+					</h5>
+					<button class="learnmorebtn-detail">LEARN MORE</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" id="secondsection-detail">
+		<div class="container">
+			<h1 style="text-align: center;padding-top: 20px;"><b>Other Breeds</b></h1>
+			<div class="row" style="padding-top: 35px;">
+				<div class="col-xl-4 col-lg-4 col-md-4">
+					<img src="./img/husky-others.png" class="img-fluid img-height-others-detail" alt="">
+					<h3><b>Husky - 8 months</b></h3>
+					<br>
+					<h5>
+						Siberian Husky, a thickly coated, compact sled dog of medium size and great endurance,
+						was developed to work in packs, pulling light loads at moderate speeds over vast frozen
+						expanses.
+					</h5>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-4">
+					<img src="./img/german-shepherd-others.jpg" class="img-fluid img-height-others-detail" alt="">
+					<h3><b>German Shepherd - 6 months</b></h3>
+					<br>
+					<h5>
+						The German Shepherd Dog is one of America's most popular dog breeds — for good reasons.
+						They're intelligent and capable working dogs.
+					</h5>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-4">
+					<img src="./img/rottweiler-others.png" class="img-fluid img-height-others-detail" alt="">
+					<h3><b>Rottweiler - 7 months</b></h3>
+					<br>
+					<h5>
+						The Rottweiler is a robust working breed of great strength descended from the mastiffs of the
+						Roman legions. The Rottie observes the outside world with a self-assured aloofness.
+					</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid d-md-none d-lg-none d-xl-none" id="small-screen-others-detail">
+		<div class="container">
+			<div class="single-item">
+				<div>
+					<img src="./img/husky-others.png" class="img-fluid img-height-others-detail" alt="">
+					<h3><b>Husky - 8 months</b></h3>
+					<br>
+					<h5>
+						Siberian Husky, a thickly coated, compact sled dog of medium size and great endurance,
+						was developed to work in packs, pulling light loads at moderate speeds over vast frozen
+						expanses.
+					</h5>
+				</div>
+				<div>
+					<img src="./img/german-shepherd-others.jpg" class="img-fluid img-height-others-detail" alt="">
+					<h3><b>German Shepherd - 6 months</b></h3>
+					<br>
+					<h5>
+						The German Shepherd Dog is one of America's most popular dog breeds — for good reasons.
+						They're intelligent and capable working dogs.
+					</h5>
+				</div>
+				<div>
+					<img src="./img/rottweiler-others.png" class="img-fluid img-height-others-detail" alt="">
+					<h3><b>Rottweiler - 7 months</b></h3>
+					<br>
+					<h5>
+						The Rottweiler is a robust working breed of great strength descended from the mastiffs of the
+						Roman legions. The Rottie observes the outside world with a self-assured aloofness.
+					</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--FOOTER-->
+	<div class="container">
+		<div class="row backtotop">
+			<div class="col-xl-2 offset-xl-10
+					  col-lg-2 offset-lg-10
+					  col-md-2 offset-md-10
+					  col-sm-3 offset-sm-9
+					  col-3 offset-9">
+				<a href="#top" onclick="topFunction()"><img src="img/paw.png" class="img-fluid" id="paw"></a>
+			</div>
+		</div>
+
+	</div>
+	<!--backtotop-->
+	<div class="container-fluid" id="bgfooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-2
+						  col-lg-2
+						  col-md-2
+						  d-none d-md-block about">
+					<h3>Contact Us</h3>
+					<ul>
+						<li><a href="#">Track Order</a></li>
+						<li><a href="#">Terms Of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Refer A Friend</a></li>
+						<li><a href="#">Explore</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-2
+						  col-lg-2
+						  col-md-2
+						  d-none d-md-block about">
+					<h3>About Us</h3>
+					<ul>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Awards</a></li>
+						<li><a href="#">Pet Spa</a></li>
+						<li><a href="#">Store Locator</a></li>
+						<li><a href="#">Community</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-2
+						  col-lg-2
+						  col-md-2
+						  d-none d-md-block about">
+					<h3>FAQs</h3>
+					<ul>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Exchange</a></li>
+						<li><a href="#">Policy</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-6
+							  col-lg-6 
+							  col-md-6 
+							  d-none d-md-block brand">
+					<img src="img/lg-02.png" class="img-fluid" id="imgf">
+					<h3> LEAVE YOUR EMAIL AND GET OFFER </h3>
+					<div class="mail1">
+						<input type="text" placeholder="Email address..." id="mailfill">
+						<button id="mailbtn"><i class="fa-light fa-envelope"></i></button>
+						<hr>
+						<p>Subscribe to our Newsletter and receive special promotions and insider information about
+							upcoming collections.</p>
+						<h6>© 2022 Earth Paws Private Limited. All Rights Reserved.</h6>
+					</div>
+
+				</div>
+				<!--imgf-->
+			</div>
+			<div class="row d-none d-md-block">
+				<div class="col-xl-8
+							  col-lg-8
+							  col-md-8">
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-2
+										  			col-lg-3
+										  			col-md-3 follus">
+								<h5>Follow us:</h5>
+							</div>
+							<div class="col-xl-4
+											  col-lg-5
+											  col-md-5 social">
+								<button id="fb"><i class="fa-brands fa-facebook-f"></i></button>
+								<button id="ins"><i class="fa-brands fa-instagram"></i></button>
+								<button id="tw"><i class="fa-brands fa-twitter"></i></button>
+								<button id="yt"><i class="fa-brands fa-youtube"></i></button>
+							</div>
+							<!--social-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--mbfooter-->
+		<div class="container d-md-none">
+			<div class="row">
+				<div class="col-sm-12
+							  col-12 mbfooter">
+					<img src="img/lg-02.png" class="img-fluid" id="imgmbfooter">
+				</div>
+				<div class="col-sm-6 offset-sm-6
+							  col-6 offset-5 socialmb">
+					<button id="fbmb"><i class="fa-brands fa-facebook-f"></i></button>
+					<button id="insmb"><i class="fa-brands fa-instagram"></i></button>
+					<button id="twmb"><i class="fa-brands fa-twitter"></i></button>
+					<button id="ytmb"><i class="fa-brands fa-youtube"></i></button>
+				</div>
+			</div>
+		</div>
+		<div class="row d-md-none">
+			<div class="col-sm-8
+							  col-8 mb">
+				<h3>Contact Us</h3>
+			</div>
+		</div>
+		<div class="container d-md-none">
+			<div class="row">
+				<div class="col-sm-12
+								col-12 detailnavi">
+					<a href="">
+						<h5>Terms Of Use</h5>
+					</a>
+					<a href="">
+						<h5>Privacy Policy</h5>
+					</a>
+					<a href="">
+						<h5>Explore</h5>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row d-md-none">
+			<div class="col-sm-10
+							  col-10 mb">
+				<h3>About Us</h3>
+			</div>
+		</div>
+		<div class="container d-md-none">
+			<div class="row">
+				<div class="col-sm-12
+									col-12 detailnavi">
+					<a href="">
+						<h5>Careers</h5>
+					</a>
+					<a href="">
+						<h5>Pet Spa</h5>
+					</a>
+					<a href="">
+						<h5>Community</h5>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row d-md-none">
+			<div class="col-sm-10
+							  col-10 mb">
+				<h3>FAQ</h3>
+			</div>
+		</div>
+		<div class="container d-md-none">
+			<div class="row">
+				<div class="col-sm-12
+									col-12 detailnavi">
+					<a href="">
+						<h5>Policy</h5>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12
+					  col-12 d-md-none">
+			<h6>© 2022 Earth Paws Private Limited. All Rights Reserved.</h6>
+		</div>
+	</div>
+	<!--Footer-->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.4.1.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/owlcarousel/owl.carousel.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#bgmobilenavi").hide();
+			$("#blackscreen").hide();
+			$("#bgmobilesearch").hide();
+
+			$("#burger").click(function () {
+				$("#bgmobilenavi").slideToggle();
+				$("#blackscreen").fadeToggle();
+			})
+			$("#blackscreen").click(function () {
+				$("#bgmobilenavi").slideUp();
+				$(this).fadeOut();
+			})
+			$("#searchs").click(function () {
+				$("#bgmobilesearch").slideToggle();
+			})
+
+			$(".owl-carousel").owlCarousel({
+				item: 4,
+				loop: true,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				autoplayHoverPause: true,
+				responsiveClass: true,
+				dotsEach: true,
+				responsive: {
+					768: { item: 3, },
+					992: { item: 4, },
+					1200: { item: 4, }
+				}
+			});
+
+			$("#smallimg-detail img").click(function () {
+				var linkimg = $(this).attr("src");
+				$(this).addClass("clickimg");
+				$("#bigimg-detail img").fadeOut(150, function () {
+					$("#bigimg-detail img").attr("src", linkimg);
+					$("#bigimg-detail img").fadeIn(150);
+				})
+			})
+		})
+
+		function scrollToSection(id) {
+			var width = $(window).width();
+
+			if (width >= 992) {
+				$('html, body').animate({
+					scrollTop: $(id).offset().top - 30
+				}, 500);
+			}
+			else {
+				console.log("Is it here");
+				var pixelSet = 0;
+
+				if (id === '#story-section') {
+					pixelSet = 1330;
+				}
+				else if (id === '#care-section') {
+					pixelSet = 2560;
+				}
+				else {
+					pixelSet = 3900;
+				}
+
+				$('html, body').animate({
+					scrollTop: $(id).offset().top + pixelSet
+				}, 500);
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+
+		function selectOption(val) {
+			var originalText = "Sort by: ";
+			document.getElementById('dropdownMenuButton').innerText = originalText + ' ' + val;
+		}
+
+		$('.single-item').slick();
+	</script>
+</body>
+</html>

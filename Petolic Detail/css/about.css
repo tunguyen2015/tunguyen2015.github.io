@@ -1,0 +1,649 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: SourceSansFont;
+    src: url(../font/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: SourceSansSlimFont;
+    src: url(../font/SourceSansPro-Light.ttf);
+}
+
+body {
+    font-family: SourceSansFont;
+}
+
+#footer {
+    height: 580px;
+    background-color: #3D322C;
+}
+
+/* Top half circle image */
+
+#top-img-about {
+    background-image: url(../img/corgi-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 680px;
+    clip-path: ellipse(100% 65% at 51% 24%);
+}
+
+#bgfooter-about {
+    height: 700px;
+	background-color: #3D332C;
+	clip-path: ellipse(100% 75% at 50% 82%);
+    position: relative;
+    margin-top: -310px;
+}
+
+/* Generic section padding */
+
+.section-padding-about {
+    padding-top:20px;
+}
+
+/* Story Section */
+
+#story-about {
+    margin-bottom: 80px;
+}
+
+#story-about h1 {
+    text-align: center;
+}
+
+#story-about #description {
+    text-align: justify;
+    padding-top: 15px;
+}
+
+/* Mission Section */
+
+#mission-about {
+    padding-top: 30px;
+    text-align: center;
+    background-color: #F6F6F6;
+    height: 720px;
+}
+
+#mission-about h1 {
+    padding-top: 15px;
+}
+
+#mission-about h3 {
+    color: #252525;
+}
+
+#mission-about .section-padding-about {
+    padding-top: 30px;
+}
+
+#mission-about img {
+    width: 180px; 
+    height: 180px;
+}
+
+#mission-about #description {
+    padding-top: 55px;
+    text-align: justify;
+}
+
+/* Principles Section */
+
+#principles-about {
+    height: 900px;
+}
+
+#principles-about h1 {
+    text-align: center;
+    padding-top: 35px;
+}
+
+.principle-section-about {
+    padding-top: 45px;
+    text-align: justify;
+}
+
+.principle-section-about .sub-section {
+    padding-top: 45px;
+}
+
+/* Partners Section */
+
+#partner-section-about {
+    background-color: #F6F6F6;
+    height: 820px;
+}
+
+#partner-section-about h1 {
+    text-align: center;
+    padding-top:30px;
+}
+
+#partner-section-about h3 {
+    color: #252525;
+}
+
+#partner-section-about #description {
+    padding-top: 45px;
+    text-align:center;
+}
+
+.content-padding {
+    padding-top: 15px;
+}
+
+.btn-detail {
+    display: block;
+    width: 100%;
+    background-color: #3D322C;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16pt;
+    color: #FFFFFF;
+    padding-top: 0.1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+    height: 3.7rem;
+    transition: all ease .5s;
+    border-radius: 28px 28px 28px 28px;
+    border: none;
+}
+
+.sectionbtn-detail {
+    display: block;
+    width: 100%;
+    background-color: #D9B26E;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16pt;
+    color: #FFFFFF;
+    padding-top: 0.1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+    height: 3.7rem;
+    transition: all ease .5s;
+    border-radius: 28px 28px 28px 28px;
+    border: none;
+}
+
+.learnmorebtn-detail {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16pt;
+    color: #3D322C;
+    padding-top: 0.2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+    height: 3.7rem;
+    transition: all ease .5s;
+    border-radius: 28px 28px 28px 28px;
+    border: solid 2pt #3D322C;
+}
+
+.btn-detail:hover {
+    background-color: #9C563D;
+}
+
+.sectionbtn-detail:hover {
+    background-color: #9C563D;
+}
+
+.learnmorebtn-detail:hover {
+    background-color: #3D322C;
+    color: #D9B26E;
+}
+
+.big-img-height-detail {
+    height: 360px;
+    width: auto;
+}
+
+.img-height-principle-about {
+    width: 180px; 
+    height:180px;
+    margin: auto;
+    display: block;
+}
+
+/*=====ONLY EXTRA LARGE=====*/
+@media (min-width: 1200px) {
+    .img-height-section-detail {
+        height: 50%;
+        margin: auto;
+        display: block;
+    }
+    
+    .img-height-care-detail {
+        height: 80%;
+        margin: auto;
+        display: block;
+    }
+    
+    .img-height-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 40px 40px 40px 40px;
+        height: 100%;
+    }
+    
+    .img-height-others-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 90px 90px 90px 90px;
+        height: 250px;
+    }
+}
+
+/*=====ONLY LARGE=====*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #firstsection-detail {
+        height: 680px;
+        padding-top: 15px;
+        background-color: #F9F9F9;
+    }
+
+    .img-height-section-detail {
+        height: 65%;
+        margin: auto;
+        display: block;
+    }
+    
+    .img-height-care-detail {
+        height: 80%;
+        margin: auto;
+        display: block;
+    }
+    
+    .img-height-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 40px 40px 40px 40px;
+        height: 110%;
+    }
+    
+    .img-height-others-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 90px 90px 90px 90px;
+    }
+
+    #bigimg-detail {
+        padding-top: 25px;
+    }
+
+    #smallimg-detail {
+        padding-top: 45px;
+    }
+}
+
+/*=====ONLY MEDIUM=====*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Story Section */
+
+    #story-about {
+        margin-bottom: 80px;
+    }
+
+    #story-about h1 {
+        text-align: center;
+    }
+
+    #story-about #description {
+        text-align: justify;
+        padding-top: 15px;
+    }
+
+    /* Mission Section */
+
+    #mission-about {
+        padding-top: 30px;
+        text-align: center;
+        background-color: #F6F6F6;
+        height: 1020px;
+    }
+
+    #mission-about h1 {
+        padding-top: 15px;
+    }
+
+    #mission-about h3 {
+        color: #252525;
+    }
+
+    #mission-about .section-padding-about {
+        padding-top: 30px;
+    }
+
+    #mission-about img {
+        width: 180px; 
+        height: 180px;
+    }
+
+    #mission-about #description {
+        padding-top: 55px;
+        text-align: justify;
+    }
+
+    /* Principles Section */
+
+    #principles-about {
+        height: 1500px;
+    }
+
+    #principles-about h1 {
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    .principle-section-about {
+        padding-top: 55px;
+        text-align: justify;
+    }
+
+    .principle-section-about .sub-section {
+        padding-top: 55px;
+    }
+
+    /* Partners Section */
+
+    #partner-section-about {
+        background-color: #F6F6F6;
+        height: 900px;
+    }
+
+    #partner-section-about h1 {
+        text-align: center;
+        padding-top:30px;
+    }
+
+    #partner-section-about h3 {
+        color: #252525;
+    }
+
+    #partner-section-about #description {
+        padding-top: 45px;
+        text-align:center;
+    }
+
+    .img-height-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 40px 40px 40px 40px;
+        height: 110%;
+    }
+    
+    .img-height-others-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 90px 90px 90px 90px;
+    }
+
+    #bgfooter-about {
+        height: 700px;
+        background-color: #3D332C;
+        clip-path: ellipse(100% 75% at 50% 82%);
+        position: relative;
+        margin-top: -145px;
+    }
+}
+
+/*=====ONLY SMALL=====*/
+@media (min-width: 576px) and (max-width: 767px) {
+    #top-img-about {
+        background-image: url(../img/corgi-2.png);
+        background-size: cover;
+        width: 100%;
+        height: 350px;
+        clip-path: ellipse(100% 65% at 51% 24%);
+    }
+
+    /* Story Section */
+
+    #story-about {
+        margin-bottom: 80px;
+    }
+
+    #story-about h1 {
+        text-align: center;
+    }
+
+    #story-about #description {
+        text-align: justify;
+        padding-top: 15px;
+    }
+
+    /* Mission Section */
+
+    #mission-about {
+        padding-top: 30px;
+        text-align: center;
+        background-color: #F6F6F6;
+        height: 1650px;
+    }
+
+    #mission-about h1 {
+        padding-top: 15px;
+    }
+
+    #mission-about h3 {
+        color: #252525;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+
+    #mission-about .section-padding-about {
+        padding-top: 30px;
+    }
+
+    #mission-about img {
+        width: 180px; 
+        height: 180px;
+    }
+
+    #mission-about #description {
+        padding-top: 5px;
+        text-align: justify;
+    }
+
+    /* Principles Section */
+
+    #principles-about {
+        height: 1650px;
+    }
+
+    #principles-about h1 {
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    .principle-section-about {
+        padding-top: 55px;
+        text-align: justify;
+    }
+
+    .principle-section-about .sub-section {
+        padding-top: 55px;
+    }
+
+    .sub-section h5 {
+        padding-top: 55px;
+    }
+
+    /* Partners Section */
+
+    #partner-section-about {
+        background-color: #F6F6F6;
+        height: 900px;
+    }
+
+    #partner-section-about h1 {
+        text-align: center;
+        padding-top:30px;
+    }
+
+    #partner-section-about h3 {
+        color: #252525;
+    }
+
+    #partner-section-about #description {
+        padding-top: 45px;
+        text-align:center;
+    }
+
+    #partner-section-about #description img {
+        padding-top: 55px;
+    }
+
+    .img-height-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 40px 40px 40px 40px;
+        height: 110%;
+    }
+    
+    .img-height-others-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 90px 90px 90px 90px;
+    }
+
+    #bgfooter-about {
+        height: 300px;
+        background-color: #3D332C;
+        clip-path: ellipse(100% 75% at 50% 82%);
+        position: relative;
+        margin-top: -200px;
+    }
+
+    .section-padding-about {
+        padding-top: 0;
+    }
+}
+
+/*=====ONLY X-SMALL=====*/
+@media (max-width: 575px) {
+    #top-img-about {
+        background-image: url(../img/corgi-2.png);
+        background-size: cover;
+        width: 100%;
+        height: 350px;
+        clip-path: ellipse(100% 65% at 51% 24%);
+    }
+
+    /* Story Section */
+
+    #story-about {
+        margin-bottom: 80px;
+    }
+
+    #story-about h1 {
+        text-align: center;
+    }
+
+    #story-about #description {
+        text-align: justify;
+        padding-top: 15px;
+    }
+
+    /* Mission Section */
+
+    #mission-about {
+        padding-top: 30px;
+        text-align: center;
+        background-color: #F6F6F6;
+        height: 1650px;
+    }
+
+    #mission-about h1 {
+        padding-top: 15px;
+    }
+
+    #mission-about h3 {
+        color: #252525;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+
+    #mission-about .section-padding-about {
+        padding-top: 30px;
+    }
+
+    #mission-about img {
+        width: 180px; 
+        height: 180px;
+    }
+
+    #mission-about #description {
+        padding-top: 5px;
+        text-align: justify;
+    }
+
+    /* Principles Section */
+
+    #principles-about {
+        height: 1650px;
+    }
+
+    #principles-about h1 {
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    .principle-section-about {
+        padding-top: 55px;
+        text-align: justify;
+    }
+
+    .principle-section-about .sub-section {
+        padding-top: 55px;
+    }
+
+    .sub-section h5 {
+        padding-top: 55px;
+    }
+
+    /* Partners Section */
+
+    #partner-section-about {
+        background-color: #F6F6F6;
+        height: 900px;
+    }
+
+    #partner-section-about h1 {
+        text-align: center;
+        padding-top:30px;
+    }
+
+    #partner-section-about h3 {
+        color: #252525;
+    }
+
+    #partner-section-about #description {
+        padding-top: 45px;
+        text-align:center;
+    }
+
+    #partner-section-about #description img {
+        padding-top: 55px;
+    }
+
+    .img-height-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 40px 40px 40px 40px;
+        height: 110%;
+    }
+    
+    .img-height-others-detail {
+        border: solid 2pt #D9B26E;
+        border-radius: 90px 90px 90px 90px;
+    }
+
+    #bgfooter-about {
+        height: 600px;
+        background-color: #3D332C;
+        clip-path: ellipse(100% 75% at 50% 82%);
+        position: relative;
+        margin-top: -200px;
+    }
+
+    .section-padding-about {
+        padding-top: 0;
+    }
+}

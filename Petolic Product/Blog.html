@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blog</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="css/Blog.css" rel="stylesheet">
+	<link href="css/common.css" rel="stylesheet">
+	<link href="css/Fontawesome/css/all.min.css" rel="stylesheet">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.4.1.js"></script>
+	<script src="css/dist/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#bgmobilenavi").hide();
+			$("#blackscreen").hide();
+			$("#bgmobilesearch").hide();
+
+			$("#burger").click(function () {
+				$("#bgmobilenavi").slideToggle();
+				$("#blackscreen").fadeToggle();
+			})
+			$("#blackscreen").click(function () {
+				$("#bgmobilenavi").slideUp();
+				$(this).fadeOut();
+			})
+			$("#searchs").click(function () {
+				$("#bgmobilesearch").slideToggle();
+			})
+
+			$(".owl-carousel").owlCarousel({
+				item: 4,
+				loop: true,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				autoplayHoverPause: true,
+				responsiveClass: true,
+				dotsEach: true,
+				responsive: {
+					768: { item: 3, },
+					992: { item: 4, },
+					1200: { item: 4, }
+				}
+			});
+		})
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}  
+	</script>
+</head>
+<body>
+	<div class="container-fluid" id="blackscreen"></div>
+	<!--NAVI-->
+	<div class="container-fluid" id="bgnavi">
+		<div class="container d-none d-md-block">
+			<div class="row">
+				<div class="col-xl-2
+                            col-lg-2
+							col-md-2" id="logo">
+					<a href="../Petolic Home/home.html"><img class="img-fluid imglogo" src="img/logopjweb-02.png"></a>
+				</div>
+				<!--logo-->
+				<div class="col-xl-5 offset-xl-1
+							col-lg-5 
+							col-md-5 offset-md-1" id="navi">
+					<ul>
+						<li><a href="../Petolic Product/Product.html">Pets</a></li>
+						<li><a href="../Petolic Home/process-Phuong.html">Purchase</a></li>
+						<li><a href="../Petolic Detail/About Us.html">About us</a></li>
+						<li><a href="../Petolic Product/Blog.html">Blogs</a></li>
+					</ul>
+				</div>
+				<!--navi-->
+				<div class="col-xl-2 
+							col-lg-2 
+							col-md-2" id="seach">
+					<div class="searchbox">
+						<input type="text" placeholder="" id="searchfill">
+						<button id="searchbtn"><i class="fa-regular fa-magnifying-glass"></i></button>
+					</div>
+				</div>
+				<!--search-->
+				<div class="col-xl-2
+							  col-lg-2
+							  col-md-2" id="icon">
+					<ul>
+						<li><a id="buy"><i class="fa-light fa-basket-shopping"></i></a></li>
+						<li><a id="user"><i class="fa-light fa-user"></i></a></li>
+					</ul>
+				</div>
+				<!--icons-->
+			</div>
+		</div>
+		<!-- MOBILE NAVI-->
+
+		<div class="container d-md-none">
+			<div class="row">
+				<div class="col-sm-3
+							  col-3" id="burgerline">
+					<ul>
+						<li><a id="burger"><i class="fa-light fa-bars"></i></a></li>
+						<li><a id="searchs"><i class="fa-light fa-magnifying-glass"></i></a></li>
+					</ul>
+				</div>
+				<!--burgerline-->
+				<div class="col-sm-3 offset-sm-2
+							  col-4 offset-1" id="logos">
+				</div>
+				<!--logos-->
+				<div class="col-sm-3 offset-sm-1
+							  col-3 offset-2" id="icons">
+					<ul>
+						<li><a id="buys"><i class="fa-light fa-basket-shopping"></i></a></li>
+						<li><a id="users"><i class="fa-light fa-user"></i></a></li>
+					</ul>
+				</div>
+				<!--icons-->
+			</div>
+		</div>
+		<!--MOBILE NAVI-->
+	</div>
+	<!--filtermbnavi-->
+	<div class="container-fluid d-md-none" id="bgmobilenavi">
+		<div class="row">
+			<div class="col-sm-12 col-12" id="mobilenavi">
+				<ul>
+					<li><a href="../Petolic Product/Product.html">Puppies</a></li>
+					<li><a href="../Petolic Product/Product-Cat.html">Kitties</a></li>
+					<li><a href="../Petolic Product/Product-Bunny.html">Bunnies</a></li>
+					<li><a href="../Petolic Home/process-Phuong.html">Purchase</a></li>
+					<li><a href="../Petolic Detail/About Us.html">About Us</a></li>
+					<li><a href="../Petolic Product/Blog.html">Blogs</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid d-md-none" id="bgmobilesearch">
+		<div class="row">
+			<div class="col-sm-12 col-12" id="mobilesearch">
+				<input type="text" placeholder="search here..." id="mobilesearchfill">
+				<button id="mobilesearchbtn"><i class="fa-light fa-magnifying-glass"></i></button>
+			</div>
+		</div>
+	</div>
+	<!--navi-->
+	<!--Content-->
+	<div class="container">
+		<div class="col-xl-12
+				col-lg-12
+				col-md-12
+				col-sm-12
+				col-12">
+			<!--Blog1-->
+			<div class="row">
+				<div class="col-xl-6 
+						col-lg-6 offset-lg-0
+						col-md-10 offset-md-1
+						col-sm-10 offset-sm-1
+						col-10 offset-1 imgblog">
+					<div class="row">
+						<img src="Project images/Blogimg/yoad-shejtman-fn9oNWQ1MBk-unsplash.png" class="img-fluid"
+							id="blogimg1">
+					</div>
+				</div>
+				<!--imgblog-->
+				<div class="col-xl-5 offset-xl-1
+					col-lg-5 offset-lg-0
+					col-md-10 offset-md-0
+					col-sm-12 offset-sm-0
+					col-12 offset-1 blogcontent">
+					<h2>Why you should be aware your buddy's sleep routine.</h2>
+					<p>
+						For a dog, sleep is a very important thing to ensure health as well as normal body activities.
+						However, is it good for dogs to sleep a lot? This is a concern of many people when raising
+						pets...</p>
+					<button class="readmore"><a>Read more...</a></button>
+				</div>
+				<!--Blogcontent-->
+			</div>
+			<!--Blog1-->
+
+			<!--Blog2-->
+			<div class="row">
+				<div class="col-xl-6 
+						col-lg-6 offset-lg-0
+						col-md-10 offset-md-1
+						col-sm-10 offset-sm-1
+						col-10 offset-1 imgblog">
+					<div class="row">
+						<img src="Project images/Blogimg/2.png" class="img-fluid" id="blogimg2">
+					</div>
+				</div>
+				<!--imgblog-->
+				<div class="col-xl-5 offset-xl-1
+					col-lg-5 offset-lg-0
+					col-md-10 offset-md-0
+					col-sm-12 offset-sm-0
+					col-12 offset-1 blogcontent">
+					<h2>What to Know About Shiba Inus</h2>
+					<p>Shiba Inus are small, well-muscled dogs with an ancient Japanese history. They were once used as
+						hunters, and they're now a popular companion in Japan. Shiba Inus are bold, confident dogs with
+						foxlike mannerisms. They have distinct tan, black, or red coats with white markings...</p>
+					<button class="readmore"><a>Read more...</a></button>
+				</div>
+				<!--Blogcontent-->
+			</div>
+			<!--Blog2-->
+			<!--Blog3-->
+			<div class="row">
+				<div class="col-xl-6 
+						col-lg-6 offset-lg-0
+						col-md-10 offset-md-1
+						col-sm-10 offset-sm-1
+						col-10 offset-1 imgblog">
+					<div class="row">
+						<img src="Project images/Blogimg/3.png" class="img-fluid" id="blogimg3">
+					</div>
+				</div>
+				<!--imgblog-->
+				<div class="col-xl-5 offset-xl-1
+					col-lg-5 offset-lg-0
+					col-md-10 offset-md-0
+					col-sm-12 offset-sm-0
+					col-12 offset-1 blogcontent">
+					<h2>Proper Poodle Feeding</h2>
+					<p>You will want to have a mix of protein, healthy grains, vegetables and fruits. Proteins can
+						include beef, chicken, turkey, lamb, veal, and fish (cod, flounder, salmon, whitefish).
+						Vegetables can include sugar snap peas, green beans, lima beans, spinach, peas, zucchini,
+						carrots, sweet potato, and regular potato...</p>
+					<button class="readmore"><a>Read more...</a></button>
+				</div>
+				<!--Blogcontent-->
+			</div>
+			<!--Blog3-->
+			<!--Pagenumber-->
+			<div class="row justify-content-center">
+				<div class="col-xl-3
+								col-lg-3
+								col-md-4
+								col-sm-5
+								col-6" id="pagenumber-blog">
+					<ul>
+						<li><a href="">1</a></li>
+						<li><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">5</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--FOOTER-->
+	<div class="container">
+		<div class="row backtotop">
+			<div class="col-xl-2 offset-xl-10
+					  col-lg-2 offset-lg-10
+					  col-md-2 offset-md-10
+					  col-sm-3 offset-sm-9
+					  col-3 offset-9">
+				<a href="#top" onclick="topFunction()"><img src="img/paw.png" class="img-fluid" id="paw"></a>
+			</div>
+		</div>
+
+	</div>
+	<!--backtotop-->
+	<div class="container-fluid" id="bgfooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-2
+						  col-lg-2
+						  col-md-2
+						  d-none d-md-block about">
+					<h3>Contact Us</h3>
+					<ul>
+						<li><a href="#">Track Order</a></li>
+						<li><a href="#">Terms Of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Refer A Friend</a></li>
+						<li><a href="#">Explore</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-2
+						  col-lg-2
+						  col-md-2
+						  d-none d-md-block about">
+					<h3>About Us</h3>
+					<ul>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Awards</a></li>
+						<li><a href="#">Pet Spa</a></li>
+						<li><a href="#">Store Locator</a></li>
+						<li><a href="#">Community</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-2
+						  col-lg-2
+						  col-md-2
+						  d-none d-md-block about">
+					<h3>FAQs</h3>
+					<ul>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Exchange</a></li>
+						<li><a href="#">Policy</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-6
+							  col-lg-6 
+							  col-md-6 
+							  d-none d-md-block brand">
+					<img src="img/lg-02.png" class="img-fluid" id="imgf">
+					<h3> LEAVE YOUR EMAIL AND GET OFFER </h3>
+					<div class="mail1">
+						<input type="text" placeholder="Email address..." id="mailfill">
+						<button id="mailbtn"><i class="fa-light fa-envelope"></i></button>
+						<hr>
+						<p>Subscribe to our Newsletter and receive special promotions and insider information about
+							upcoming collections.</p>
+						<h6>© 2022 Earth Paws Private Limited. All Rights Reserved.</h6>
+					</div>
+
+				</div>
+				<!--imgf-->
+			</div>
+			<div class="row d-none d-md-block">
+				<div class="col-xl-8
+							  col-lg-8
+							  col-md-8">
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-2
+										  			col-lg-3
+										  			col-md-3 follus">
+								<h5>Follow us:</h5>
+							</div>
+							<div class="col-xl-4
+											  col-lg-5
+											  col-md-5 social">
+								<button id="fb"><i class="fa-brands fa-facebook-f"></i></button>
+								<button id="ins"><i class="fa-brands fa-instagram"></i></button>
+								<button id="tw"><i class="fa-brands fa-twitter"></i></button>
+								<button id="yt"><i class="fa-brands fa-youtube"></i></button>
+							</div>
+							<!--social-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--mbfooter-->
+		<div class="container d-md-none">
+			<div class="row">
+				<div class="col-sm-12
+							  col-12 mbfooter">
+					<img src="img/lg-02.png" class="img-fluid" id="imgmbfooter">
+				</div>
+				<div class="col-sm-6 offset-sm-6
+							  col-6 offset-5 socialmb">
+					<button id="fbmb"><i class="fa-brands fa-facebook-f"></i></button>
+					<button id="insmb"><i class="fa-brands fa-instagram"></i></button>
+					<button id="twmb"><i class="fa-brands fa-twitter"></i></button>
+					<button id="ytmb"><i class="fa-brands fa-youtube"></i></button>
+				</div>
+			</div>
+		</div>
+		<div class="row d-md-none">
+			<div class="col-sm-8
+							  col-8 mb">
+				<h3>Contact Us</h3>
+			</div>
+		</div>
+		<div class="container d-md-none">
+			<div class="row">
+				<div class="col-sm-12
+								col-12 detailnavi">
+					<a href="">
+						<h5>Terms Of Use</h5>
+					</a>
+					<a href="">
+						<h5>Privacy Policy</h5>
+					</a>
+					<a href="">
+						<h5>Explore</h5>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row d-md-none">
+			<div class="col-sm-10
+							  col-10 mb">
+				<h3>About Us</h3>
+			</div>
+		</div>
+		<div class="container d-md-none">
+			<div class="row">
+				<div class="col-sm-12
+									col-12 detailnavi">
+					<a href="">
+						<h5>Careers</h5>
+					</a>
+					<a href="">
+						<h5>Pet Spa</h5>
+					</a>
+					<a href="">
+						<h5>Community</h5>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row d-md-none">
+			<div class="col-sm-10
+							  col-10 mb">
+				<h3>FAQ</h3>
+			</div>
+		</div>
+		<div class="container d-md-none">
+			<div class="row">
+				<div class="col-sm-12
+									col-12 detailnavi">
+					<a href="">
+						<h5>Policy</h5>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12
+					  col-12 d-md-none">
+			<h6>© 2022 Earth Paws Private Limited. All Rights Reserved.</h6>
+		</div>
+	</div>
+	<!--Footer-->
+</body>
+</html>
