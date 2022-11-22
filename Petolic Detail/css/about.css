@@ -106,14 +106,14 @@ body {
 }
 
 .principle-section-about .sub-section {
-    padding-top: 45px;
+    padding-top: 42px;
 }
 
 /* Partners Section */
 
 #partner-section-about {
     background-color: #F6F6F6;
-    height: 820px;
+    height: 580px;
 }
 
 #partner-section-about h1 {
@@ -206,6 +206,13 @@ body {
 .img-height-principle-about {
     width: 180px; 
     height:180px;
+    margin: auto;
+    display: block;
+}
+
+.img-height-principle-website-about {
+    width: 140px; 
+    height:140px;
     margin: auto;
     display: block;
 }
@@ -472,7 +479,7 @@ body {
 
     #partner-section-about {
         background-color: #F6F6F6;
-        height: 900px;
+        height: 700px;
     }
 
     #partner-section-about h1 {
